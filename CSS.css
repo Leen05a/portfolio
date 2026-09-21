@@ -4,10 +4,16 @@ body {
     background-color: bisque;
     color: saddlebrown;
 }
-header {
-    padding: 30px;
+
+#forside {
     text-align: center;
 }
+
+header {
+    padding: 25px;
+    text-align: center;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -15,41 +21,57 @@ nav ul {
     list-style: none;
     padding: 0;
 }
-nav a {
-    text-decoration: none;
-    color: navy;
-}
+
 section {
-    padding: 30px;
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+}
+h1, h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.5;
 }
 img {
     width: 175px;
     border-radius: 15px;
 }
+
 footer {
     padding: 30px;
     text-align: center;
 }
+
 .om-mig-indhold {
     display: flex;
     align-items: center;
     gap: 40px;
 }
+
 .om-mig-tekst {
     max-width: 600px;
 }
+
 @media screen and (max-width: 600px) {
 
     nav ul {
         flex-direction: column;
         align-items: center;
     }
+
     .om-mig-indhold {
         flex-direction: column;
     }
+
     section {
         padding: 20px;
     }
+
     img {
         width: 100%;
         max-width: 250px;
